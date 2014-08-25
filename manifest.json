@@ -1,7 +1,7 @@
 {
   "name": "oauth2",
   "author": "Alan Plum",
-  "version": "0.1",
+  "version": "1.0.0",
   "description": "OAuth2 authentication for Foxx.",
 
   "exports": {
