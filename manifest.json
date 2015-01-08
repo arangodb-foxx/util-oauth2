@@ -1,8 +1,21 @@
 {
   "name": "oauth2",
-  "author": "Alan Plum",
-  "version": "1.0.0",
   "description": "OAuth2 authentication for Foxx.",
+  "author": "ArangoDB GmbH",
+  "version": "1.0.0",
+  "license": "Apache License, Version 2.0",
+
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arangodb/foxx-oauth2.git"
+  },
+
+  "contributors": [
+    {
+      "name": "Alan Plum",
+      "email": "me@pluma.io"
+    }
+  ],
 
   "exports": {
     "providers": "providers.js"
