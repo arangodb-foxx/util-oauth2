@@ -1,0 +1,9 @@
+{
+  "private": true,
+  "devDependencies": {
+    "jshint": "^2.6.0"
+  },
+  "scripts": {
+    "lint": "jshint *.js"
+  }
+}

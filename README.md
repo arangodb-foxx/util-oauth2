@@ -303,3 +303,7 @@ Applies the provider's *usernameTemplate* to the given user object.
 var userData = provider.fetchActiveUser(access_token);
 var username = provider.getUsername(userData);
 ```
+
+## License
+
+This code is distributed under the [Apache License](http://www.apache.org/licenses/LICENSE-2.0).
