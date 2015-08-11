@@ -2,7 +2,7 @@
   "name": "oauth2",
   "description": "OAuth2 client for Foxx.",
   "author": "ArangoDB GmbH",
-  "version": "1.2.0",
+  "version": "2.0.0",
   "license": "Apache License, Version 2.0",
   "repository": {
     "type": "git",
@@ -16,7 +16,6 @@
   ],
   "exports": "exports.js",
   "defaultDocument": "",
-
   "configuration": {
     "authEndpoint": {
       "type": "string",
