@@ -1,11 +1,10 @@
-/*global require, exports, applicationContext */
+/*global applicationContext */
 'use strict';
 var _ = require('underscore');
 var url = require('url');
 var querystring = require('querystring');
 var internal = require('internal');
 var arangodb = require('org/arangodb');
-var db = arangodb.db;
 var Foxx = require('org/arangodb/foxx');
 var errors = require('./errors');
 

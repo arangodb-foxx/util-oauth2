@@ -1,4 +1,4 @@
-/*global require, applicationContext */
+/*global applicationContext */
 'use strict';
 var db = require('org/arangodb').db;
 var providersName = applicationContext.collectionName('providers');
@@ -8,6 +8,7 @@ if (db._collection(providersName) === null) {
 }
 
 var providers = db._collection(providersName);
+
 [
   {
     _key: 'github',
@@ -37,7 +38,7 @@ var providers = db._collection(providersName);
     clientId: null,
     clientSecret: null
   }
-].forEach(function(provider) {
+].forEach(function (provider) {
   if (!providers.exists(provider._key)) {
     providers.save(provider);
   }
