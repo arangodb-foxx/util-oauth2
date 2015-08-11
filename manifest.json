@@ -1,6 +1,6 @@
 {
   "name": "oauth2",
-  "description": "OAuth2 authentication for Foxx.",
+  "description": "OAuth2 client for Foxx.",
   "author": "ArangoDB GmbH",
   "version": "1.2.0",
   "license": "Apache License, Version 2.0",
@@ -14,10 +14,39 @@
       "email": "me@pluma.io"
     }
   ],
-  "exports": {
-    "providers": "providers.js"
-  },
+  "exports": "exports.js",
   "defaultDocument": "",
-  "lib": ".",
-  "setup": "setup.js"
+
+  "configuration": {
+    "authEndpoint": {
+      "type": "string",
+      "description": "The provider's authorization endpoint.",
+      "required": true
+    },
+    "tokenEndpoint": {
+      "type": "string",
+      "description": "The provider's token endpoint",
+      "required": true
+    },
+    "refreshEndpoint": {
+      "type": "string",
+      "description": "The provider's refresh token endpoint.",
+      "required": false
+    },
+    "activeUserEndpoint": {
+      "type": "string",
+      "description": "The provider's endpoint for fetching details about the current user.",
+      "required": false
+    },
+    "clientId": {
+      "type": "string",
+      "description": "The application's Client ID (or App ID) for the provider.",
+      "required": true
+    },
+    "clientSecret": {
+      "type": "string",
+      "description": "The application's Client Secret (or App Secret) for the provider.",
+      "required": true
+    }
+  }
 }
