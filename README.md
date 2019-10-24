@@ -2,6 +2,8 @@
 
 The OAuth2 client utility service provides abstractions over OAuth2 providers like Facebook, GitHub and Google.
 
+**NOTE**: This service was written for ArangoDB 2.8. If you are using ArangoDB 3 and later, you should use the [built-in OAuth 2.0 module](https://www.arangodb.com/docs/stable/foxx-reference-modules-oauth2.html) instead.
+
 ## Configuration
 
 This utility has the following configuration options:
